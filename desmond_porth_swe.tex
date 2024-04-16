@@ -1,0 +1,225 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeSkillsSubheading}[4]{
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-17pt}
+}
+
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeExperienceSubheading}[4]{
+  \vspace{9pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textbf{#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[1]{
+    \vspace{-15pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Desmond Porth} \\ 
+    \small Available in EST, MST, PST, CT timezones \\ \vspace{4pt}
+    \small 208-721-7067 $|$ \href{mailto:x@x.com}{\underline{desaporth@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/dporth}{\underline{linkedin.com/in/dporth}} $|$
+    \href{https://github.com/dporth}{\underline{github.com/dporth}}
+\end{center}
+
+%-----------SKILLS SUMMARY-----------
+\section{Skills Summary}
+    \begin{minipage}[t]{0.25\textwidth}
+        \textbf{Languages} \\
+        \textbf{Data Stores} \\
+        \textbf{Frameworks \& Tools} \\
+        \\
+        \\
+        \textbf{Methodologies} \\
+        \\
+        \textbf{Cloud} 
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.74\textwidth}
+        Python, SQL, Typescript, Java, PowerShell, Bash, Dart, HTML/CSS \\
+        Postgres, SQL Server, Delta Lake \\
+        Git, Docker, Spark, PySpark, Databricks, Angular, Kubernetes, JAMS, Flask, Django, Flutter, Jenkins, Octopus, Ansible, DataDog, Grafana, Tableau, Linux  \\
+        \\
+        Agile, RESTful APIs, Big Data, ETL, CI/CD, Object Oriented Programming, OOP Design Patterns \\
+        Azure Databases, APIM, App Service, Blob Storage -- AWS EC2, RDS, S3, OpenSearch -- GCP AutoML Tables, Cloud Functions
+    \end{minipage}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeExperienceSubheading
+      {Senior Software Engineer}{February 2023 -- Present}
+      {Federal Reserve Bank of KC (Remote)}{}
+    \resumeSubSubheading
+        {Python, SQL, PowerShell, Git, PySpark, Django, Docker, Databricks, Jenkins, OOP, AWS, ETL, REST APIs}{}
+      \resumeItemListStart
+        \resumeItem{Maintained, enhanced, and optimized the backend of \href{https://www.usaspending.gov/} {\underline{usaspending.gov}} using the tech stack listed above.}
+        \resumeItem{Facilitated backend production deployments for usaspending.gov.}
+        \resumeItem{Migrated PSQL to Spark SQL and Databricks (on AWS) to decrease the runtime of our nightly ETL pipeline by 7 hours.}
+        \resumeItem{Created ETL to load data from Postgres into Elasticsearch to increase the scalability of our API and to ensure fast API response times.}
+        \resumeItem{Mentored an intern on the team who ultimately was hired on full time.}
+        \resumeItem{Updated ETL pipelines and created new RESTful endpoints to automate generation of unlinked federal award reports so Salesforce could integrate them into our agency resources site.}
+      \resumeItemListEnd
+      
+
+
+    \resumeExperienceSubheading
+          {Senior Data Engineer}{May 2021 -- February 2023}
+          {R1 RCM (Remote)}{}
+      \resumeSubSubheading
+        {Python, SQL, PowerShell, Git, PySpark, Databricks, Octopus, OOP, JAMS, Docker, ETL, REST APIs}{}
+      \resumeItemListStart
+        \resumeItem{On a team of 12 Data Engineers, I mentored and led the team to maintain, enhance, and optimize object oriented, batch ETL pipelines in PySpark using Databricks (on Azure).}
+        \resumeItem{Refactored our Spark UDFs to Spark function which reduced the runtime of our PySpark DataFrame transformation Microservice by 72\%.}
+        \resumeItem{Enabled the re-usability of the company's many Databricks helper notebooks by migrating them to Python libraries with Wheel distributions.}
+        \resumeItem{Improved the modularity, scalability, and test-ability of our object oriented inbound pipeline by implementing well known design patterns (Factory, Builder, and Strategy) and best practices/principles (DRY, ETC).}
+        \resumeItem{Implemented PySpark queries to support a feature that enabled our inbound object oriented ETL pipeline to ingest keyless visit transactions from hospital systems.}
+        \resumeItem{Architect and lead developer of an external facing ETL pipeline, on Databricks, that sped up client implementations and improved data quality of our inbound pipeline.}
+    \resumeItemListEnd
+
+    \resumeExperienceSubheading
+          {Data Engineer}{Feburary 2019 -- May 2021}
+          {Micron}{}
+      \resumeSubSubheading
+        {Python, SQL, Angular, HTML, CSS, PowerShell, Git, Flask, Docker, Jenkins, Kubernetes, ETL, REST APIs}{}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained a RESTful API using Python, Flask, and SQL Server to enable finance data integration in Salesforce.}
+        \resumeItem{Used Docker to containerize Python, Nginx, Angular, R packages, and other data science solutions.}
+        \resumeItem{Designed, developed, and maintained end to end solutions including ETL pipelines to ingest data from SAP Hana and Oracle to SQL Server using SSIS, stored procedures, and interactive Tableau dashboards.}
+        \resumeItem{Architect and developer of DevOps processes using Jenkins, Groovy, Docker, and OpenShift Kubernetes. My processes served and deployed machine learning models, APIs, and other data science applications.}
+        \resumeItem{Created machine learning models using the AutoML Tables API in GCP and integrated the models into data pipelines.}
+        \resumeItem{Developed and delivered end to end solutions in the Procurement space like Price Arbitrage, Price Trend, Supplier X-Ray.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeExperienceSubheading
+        {My Chess Tournament}{2021 -- Present}
+        {Pull Request LLC}{}
+      \resumeSubSubheading
+        {Python, SQL, Angular, Flutter, HTML, CSS, PowerShell, Git, Flask, ORM, Docker, ETL, REST APIs}{}
+          \resumeItemListStart
+            \resumeItem{Developed and maintain a cross-platform chess tournament management software.}
+            \resumeItem{Implemented the API using REST architecture style and deployed all applications to the Azure cloud.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Johns Hopkins University}{Online}
+      {Master’s in Computer Science}{August 2023 -- Present}
+    \resumeSubheading
+      {Boise State University}{Graduated Magna Cum Laude (GPA 3.9)}
+      {Bachelor of Science in Computer Science, Minor Applied Mathematics}{Earned May 2020}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
